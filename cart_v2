@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="ST_Slope_Up <= 0.5\ngini = 0.5\nsamples = 704\nvalue = [352, 352]\nclass = Heart Disease", fillcolor="#ffffff"] ;
+1 [label="ChestPainType_Asymptomatic <= 0.5\ngini = 0.33\nsamples = 388\nvalue = [81, 307]\nclass = No Heart Disease", fillcolor="#6db7ec"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="MaxHR <= 0.641\ngini = 0.488\nsamples = 130\nvalue = [55, 75]\nclass = No Heart Disease", fillcolor="#cae5f8"] ;
+1 -> 2 ;
+3 [label="Female <= 0.5\ngini = 0.423\nsamples = 89\nvalue = [27, 62]\nclass = No Heart Disease", fillcolor="#8fc8f0"] ;
+2 -> 3 ;
+4 [label="gini = 0.365\nsamples = 75\nvalue = [18, 57]\nclass = No Heart Disease", fillcolor="#78bced"] ;
+3 -> 4 ;
+5 [label="gini = 0.459\nsamples = 14\nvalue = [9, 5]\nclass = Heart Disease", fillcolor="#f3c7a7"] ;
+3 -> 5 ;
+6 [label="gini = 0.433\nsamples = 41\nvalue = [28, 13]\nclass = Heart Disease", fillcolor="#f1bc95"] ;
+2 -> 6 ;
+7 [label="gini = 0.181\nsamples = 258\nvalue = [26, 232]\nclass = No Heart Disease", fillcolor="#4fa8e8"] ;
+1 -> 7 ;
+8 [label="ChestPainType_Asymptomatic <= 0.5\ngini = 0.244\nsamples = 316\nvalue = [271, 45]\nclass = Heart Disease", fillcolor="#e9965a"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Oldpeak <= 0.551\ngini = 0.084\nsamples = 228\nvalue = [218, 10]\nclass = Heart Disease", fillcolor="#e68742"] ;
+8 -> 9 ;
+10 [label="gini = 0.068\nsamples = 226\nvalue = [218, 8]\nclass = Heart Disease", fillcolor="#e68640"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = No Heart Disease", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="ExerciseAngina_Y <= 0.5\ngini = 0.479\nsamples = 88\nvalue = [53, 35]\nclass = Heart Disease", fillcolor="#f6d4bc"] ;
+8 -> 12 ;
+13 [label="RestingBP <= 0.275\ngini = 0.383\nsamples = 62\nvalue = [46, 16]\nclass = Heart Disease", fillcolor="#eead7e"] ;
+12 -> 13 ;
+14 [label="gini = 0.473\nsamples = 13\nvalue = [5, 8]\nclass = No Heart Disease", fillcolor="#b5daf5"] ;
+13 -> 14 ;
+15 [label="gini = 0.273\nsamples = 49\nvalue = [41, 8]\nclass = Heart Disease", fillcolor="#ea9a60"] ;
+13 -> 15 ;
+16 [label="gini = 0.393\nsamples = 26\nvalue = [7, 19]\nclass = No Heart Disease", fillcolor="#82c1ef"] ;
+12 -> 16 ;
+}
